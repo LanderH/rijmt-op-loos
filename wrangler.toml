@@ -1,9 +1,12 @@
 name = "rijmt-op-loos"
-compatibility_date = "2024-09-01"
-pages_build_output_dir = "dist"
+main = "worker/index.js"
+compatibility_date = "2026-07-01"
 
-# Vul hier de id in die je krijgt na het aanmaken van de KV namespace
-# (zie README.md, sectie "Reviews en suggesties instellen").
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+run_worker_first = ["/api/*"]
+
 [[kv_namespaces]]
 binding = "LOOS_KV"
-id = "VUL_HIER_JE_KV_NAMESPACE_ID_IN"
+id = "8aa3e6d65da3418c859228888f255392"
